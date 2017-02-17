@@ -1,0 +1,39 @@
+.sidebar
+  position: fixed
+  top: 45%
+  left: 0
+  width: 41%
+  height: 100%
+  overflow: hidden
+
+  .panel.layout
+    width: 55%
+    animation: anim 1s 1 ease-in-out
+    margin-left: 46%
+    .panel-heading
+      text-transform: uppercase
+      font-weight: 600
+      letter-spacing: 0.02em
+    p.subtitle
+      font-style: italic
+      margin: 0.1rem 0 0.1rem
+    .social_icons
+      a
+        display: block
+        margin: 0 auto
+        width: 54px
+        height: 54px
+        text-align: center
+        font-size: .8rem
+        color: #626262
+        background: #FFF
+        transition: background .5s ease-in-out
+        transition: font-size .5s ease-in-out
+        i
+          padding-top: 20px
+        &:hover
+          transition: background .3s ease-in-out
+          transition: font-size .3s ease-in-out
+          text-decoration: none
+          font-size: 1rem
+          background: #F5F5F5
