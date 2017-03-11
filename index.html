@@ -1,0 +1,16 @@
+---
+layout: home
+---
+
+<div class="blog-list">
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">
+                {{ post.title }}
+                <span class="date">{{ post.date | date: '%Y %b %d' }}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

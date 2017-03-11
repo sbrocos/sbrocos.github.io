@@ -3,3 +3,6 @@ _site/
 .jekyll-metadata
 .ruby-version
 .ruby-gemset
+
+# Filesystem from OSX and Rubymine
+.idea
