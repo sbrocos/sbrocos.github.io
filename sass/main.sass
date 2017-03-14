@@ -1,14 +1,47 @@
-body
-  > .container-fluid > .row > .col-md-7
-    padding: 0
-
 @import "mixins"
 @import "typography"
 @import "header"
-@import "breadcrumb"
+//@import "breadcrumb"
 @import "sidebar"
-@import "blog_list"
+//@import "blog_list"
 
 
-.post
-  margin-right: 40px
+
+
+.wrapper
+  background: white
+  margin-left: 30%
+  padding: 0px  0px 40px
+
+.navbar-toggler
+  border: none
+
+.jumbotron
+  background: transparent
+  margin-bottom: 0
+  padding: 4em 2em 2em
+  .box
+    border: 2px solid #626262
+    padding: 20px
+    width: 300px
+    margin: 0 auto
+    text-align: center
+  h1
+    font-size: 18px
+    text-transform: uppercase
+  h4
+    font-size: 14px
+    font-style: italic
+
+
+.m-40
+  margin: 40px
+
+
+.breadcrumb
+  border-radius: 0
+  background: #fefefe
+
+
+.page
+  margin: 20px

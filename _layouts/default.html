@@ -23,29 +23,34 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 
 </head>
 
 <body>
-  <header>
-    <div class='title_page'>
-        <a href="/" class="brand">{{ site.name }}</a>
-    </div>
-  </header>
+<div class="sidebar"></div>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12 col-md-5">
-        {% include sidebar.html %}
-      </div>
-      <div class="col-sm-12 col-md-7">
-        <!-- Content here -->
-        {{ content }}
-      </div>
-    </div>
 
+  <div class="wrapper">
+      <div class="container-fluid">
+          <!-- Header here -->
+          {% include header.html %}
+          <!-- Sidebar here -->
+          <!--{% include sidebar.html %}-->
+          <div class="jumbotron">
+              <div class="box">
+                <h1>sergio brocos</h1>
+                <h4>Ruby On Rails Full Stack Developer</h4>
+              </div>
+          </div>
+          <div class="containers">
+              <!-- Content here -->
+              {{ content }}
+          </div>
+      </div>
   </div>
+
+
   <!-- FOOTER -->
     {% include footer.html %}
   <!-- JS libs here -->
