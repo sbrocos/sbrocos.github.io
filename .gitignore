@@ -6,3 +6,4 @@ _site/
 
 # Filesystem from OSX and Rubymine
 .idea
+.DS_Store
