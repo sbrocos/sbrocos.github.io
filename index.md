@@ -4,4 +4,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
-PRUEBA
+# ABOUT ME
+
+Nacido en Paris, en 1978. Criado entre Barcelona y Santiago de Compostela. Tengo actualmente la redisdencia  en **Sabadell**.

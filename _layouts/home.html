@@ -6,11 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    {% if page.title %}
-        <title>{{ page.title }}</title>
-    {% else %}
-        <title>{{ site.name }}</title>
-    {% endif %}
+    <title>{{ site.title }}</title>
 
     <meta name="description" content="{{ site.description }}">
 
@@ -25,6 +21,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700|Montserrat:300,300i,400,400i,500,600" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -32,27 +29,33 @@
 <body>
   <header>
     <div class='title_page'>
-        <a href="/" class="brand">{{ site.name }}</a>
+        <a href="/" class="brand">{{ site.title }}</a>
     </div>
   </header>
 
-  <div class="container">
-    <div class="columns">
-      <div class="column col-6 col-mr-auto">
-        {% include sidebar.html %}
+  <section id="portada">
+      <div class="center_column">
+        <h1>Sergio Brocos</h1>
+        <h2>backend developer</h2>
       </div>
-      <div class="col-sm-12 col-md-7">
-        <!-- Content here -->
-        {{ content }}
+      <div class="pfooter">
+        <div class="footer-lang">
+            <img src="/assets/img/php.svg" height="25">
+            <img src="/assets/img/ruby.svg" height="15">
+            <img src="/assets/img/rails.svg" height="30">
+            <img src="/assets/img/crystal_lang.svg" height="25">
+            <img src="/assets/img/elixir.svg" height="20">
+        </div>
       </div>
-    </div>
+  </section>
 
+  <div class="container">
+      <!-- Content here -->
+      {{ content }}
   </div>
   <!-- FOOTER -->
     {% include footer.html %}
   <!-- JS libs here -->
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 </html>

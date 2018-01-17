@@ -1,6 +1,45 @@
 // This is a partial.
 // It lies in <source>/_sass, just waiting to be imported.
 // It does not contain the YAML front matter and has no corresponding output file in the built site.
+html, body
+  height: 100%
+  font-size: 16px
 
-body:
- background: #fff
+h1
+  font-family: 'Montserrat', 'Roboto', sans-serif
+  font-size: 1rem
+  text-transform: uppercase
+
+header
+  display: flex
+  position: fixed
+  top: 0
+  z-index: 1000
+
+.title_page > a.brand
+  font-family: 'Montserrat', 'Roboto', sans-serif
+  text-transform: uppercase
+  color: #343434
+
+#portada
+  display: flex
+  min-height: 100%
+  min-width: 100%
+  // background: #f5f5f5
+  padding-top: 40px
+  color: #000
+  h1
+    font-size: .8rem
+  h2
+    font-size: .7rem
+    font-weight: 800
+  .center_column
+    vertical-align: middle
+    margin: 0  auto
+  .pfooter
+    display: block
+    position: absolute
+    bottom: 0
+    width: 100%
+    .footer-lang
+      display: flex
