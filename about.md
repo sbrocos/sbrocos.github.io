@@ -1,12 +1,14 @@
 ---
-layout: page
+layout: home
 title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# About me
+Nacido en 1978 París, criado entre Barcelona y Santiago de Compostela, residente en Sabadell. 
 
-You can find the source code for the Jekyll new theme at:
+Web Developer desde hace más de diez años, he trabajado con tegnologías como PHP, Zend Framework, Ruby On Rails, MySQL, PostGres, HTML5, CSS3, Javascript, en diferentes proyectos de diferentes calados.
+
 
 [minima](https://github.com/jekyll/minima)
 

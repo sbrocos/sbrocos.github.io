@@ -1,61 +1,32 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    <title>{{ site.title }}</title>
-
-    <meta name="description" content="{{ site.description }}">
-
-    {% if site.google_verification %}
-        <meta name="google-site-verification" content="{{ site.google_verify }}">
-    {% endif %}
-
-    <link rel="icon" href="/assets/img/favicon.png">
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700|Montserrat:300,300i,400,400i,500,600" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-
-</head>
+{% include head.html %}
 
 <body>
-  <header>
-    <div class='title_page'>
-        <a href="/" class="brand">{{ site.title }}</a>
-    </div>
-  </header>
-
-  <section id="portada">
-      <div class="center_column">
-        <h1>Sergio Brocos</h1>
-        <h2>backend developer</h2>
+  <div class="wrapper">
+    <header>
+      <div class="logo-container">
+        <div class="brand">
+          <span>SB</span>
+          </div>
       </div>
-      <div class="pfooter">
-        <div class="footer-lang">
-            <img src="/assets/img/php.svg" height="25">
-            <img src="/assets/img/ruby.svg" height="15">
-            <img src="/assets/img/rails.svg" height="30">
-            <img src="/assets/img/crystal_lang.svg" height="25">
-            <img src="/assets/img/elixir.svg" height="20">
-        </div>
+      <div class="author-container">
+        <h1>sergio brocos</h1>
       </div>
-  </section>
-
-  <div class="container">
-      <!-- Content here -->
-      {{ content }}
+      <div class="tagline-container">
+        <p> Backend <i>RoR</i> developer </p>
+      </div>
+      <div class="options-container">
+        <a class="navbar-item" href="/">Home</a>
+        <a class="navbar-item" href="/blog">Blog</a>
+        <a class="navbar-item" href="/about">About</a>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        {{ content }}
+      </div>
+    </main>
   </div>
-  <!-- FOOTER -->
-    {% include footer.html %}
-  <!-- JS libs here -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 </body>
 </html>
