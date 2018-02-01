@@ -30,10 +30,7 @@ header
 
 // wrapper div for both header and main 
 .wrapper 
-  display: block
   margin-top: 10%
-  .col-2
-    margin-bottom: 60px
 
 
 // anchor tags 
@@ -97,7 +94,6 @@ a:hover
 .tagline-container p 
   font-size: 1.3em
   text-align: center
-  text-transform: uppercase
   margin-bottom: 2em
 
 hr 
@@ -111,6 +107,7 @@ hr
 
 // footer 
 footer 
+  position: fixed
   bottom: 0
   right: 0
   height: 20px
@@ -122,60 +119,24 @@ footer
   line-height: 0.6em
   padding: 0 5px
 
-.post__date
-  font-size: .8rem
-  color: #b6b6b6
-  p
-    margin-top: 0px
 
-.post-list
-  padding: 0
-  margin-bottom: 40px
-  li
-    list-style: none
-    border-bottom: 1px solid #e5e5e5
-  span.post-meta
-    font-size: .8rem
 // media queries
 // X-Small devices (phones, 480px and up) 
-@media (max-width: 768px) 
+@media (min-width: 480px) 
   // wrapper stays 480px wide past 480px wide and is kept centered 
-  header, main
-    padding: 0
   .wrapper 
-    width: 100%
-    margin: 8% auto 0 
-    > div
-      padding: 0 20px
-  header
-    h1
-      margin: 0
-      padding-left: 10px
-    margin: 0 !important
-    .logo-container
-      display: flex
-    .brand
-      padding-top: 11px
-      font-size: 1rem
-      span
-        border: .3rem solid
-    .tagline-container
-      width: 100%
-  .breadcrumb
-    display: none
+    width: 480px
+    margin: 10% auto 0 auto
+  
 
 
 // All other devices (768px and up) 
 @media (min-width: 768px) 
   // past 768px the layout is changed and the wrapper has a fixed width of 680px
   // to accomodate both the header column and the content column */
-  .wrapper
-    display: flex
-    width: 100%
-    > div
-      width: 50%
-    .col-2
-      padding-right: 40px
+  .wrapper 
+    width: 1180px
+  
 
   // the header column stays left and has a dynamic width with all contents aligned right 
   header 

@@ -4,24 +4,7 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="logo-container">
-        <div class="brand">
-          <span>SB</span>
-          </div>
-      </div>
-      <div class="author-container">
-        <h1>sergio brocos</h1>
-      </div>
-      <div class="tagline-container">
-        <p> Backend <i>RoR</i> developer </p>
-      </div>
-      <div class="options-container">
-        <a class="navbar-item" href="/">Home</a>
-        <a class="navbar-item" href="/blog">Blog</a>
-        <a class="navbar-item" href="/about">About</a>
-      </div>
-    </header>
+    {% include header.html %}
     <main>
       <div class="content">
         {{ content }}
