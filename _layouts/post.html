@@ -1,25 +1,8 @@
 ---
-layout: two
+layout: default
 ---
 
-<div class="post">
-    <div class="breadcrumb">
-        <div class="post__back">
-            <a href="/" class="fa_button">
-                <i class="fa fa-home"></i>
-                <span>home</span>
-            </a>
-            <a href="/blog" class="fa_button">
-              <span>blog</span>
-            </a>
-        </div>
-    </div>
-    <div class="post__title">
-        <h1>{{ page.title }}</h1>
-    </div>
-    <div class="post__date">
-        <p>{{ page.date | date: '%B %-d, %Y' }}</p>
-    </div>
+<div class="container">
     <div class="post__meta">
         <p>{{ tags_content }}</p>
     </div>

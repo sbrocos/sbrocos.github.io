@@ -1,0 +1,40 @@
+// All other devices (768px and up)
+@media (min-width: 1024px)
+  // past 768px the layout is changed and the wrapper has a fixed width of 680px
+  // to accomodate both the header column and the content column */
+  .wrapper
+    margin-left: 50%
+    width: 50%
+
+
+  // the header column stays left and has a dynamic width with all contents aligned right
+  header
+    width: 50%
+    height: 100%
+    text-align: right
+    padding: 20% 0px 0px
+    .container
+      padding: 0
+    .logo-container
+      margin-bottom: 20px
+      padding-right: $separe_middle
+      text-align: right
+    .author
+      font-size: 1.8em
+    .sub-author
+      font-size: 1em
+    ul.menu-lateral
+      text-align: right
+      a
+        padding-right: $separe_middle
+        border-right: 0px solid $red-color
+      a:hover
+        display: block
+        border-width: 100px
+        -moz-transition: padding-right .3s ease-in
+        -o-transition: padding-right  .3s ease-in
+        -webkit-transition: border-width  .3s ease-in
+        transition: border-width  .3s ease-in
+
+  .post__content
+    margin-top: 20px

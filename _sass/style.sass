@@ -3,37 +3,55 @@
 // It does not contain the YAML front matter and has no corresponding output file in the built site.
 
 $text-color: #46433A
-$anchor-text-color: #CE534D
+$red-color: #CE534D
+$anchor-text-color: $red-color
+$gray-color: #e5e5e5
 $background-color: #fff
+$separe_middle: 60px
 
 body 
   font-family: 'Montserrat', serif
   color: $text-color
   background-color: $background-color
 
+h1
+  font-family: 'Bungee', cursive
+  text-transform: capitalize
 
-header,
+ul
+  list-style: none
+  padding: 0px
+
 main 
   padding: 0 20px
 
 header
-  .brand
-    text-transform: uppercase
-    font-weight: 800
-    font-size: 4rem
-    margin-bottom: 40px
-    span
-      border: .7rem solid
-      border-color: $text-color
-      border-radius: 50%
-      padding: 5px
+  position: fixed
+  top: 0px
+  background: rgba(0,0,0,.02)
+  .author
+    font-family: 'Bungee Inline', cursive
+
+  .sub-author
+    margin-top: 5px
+    font-family: 'Bungee Hairline', cursive
+    color: black
+  ul.menu-lateral
+    display: block
+    font-family: 'Bungee', cursive
+    text-align: right
+    a
+      display: block
+      text-decoration: none
+      padding: 5px $separe_middle 5px 5px
+
 
 // wrapper div for both header and main 
-.wrapper 
+.wrapper
   display: block
-  margin-top: 10%
-  .col-2
-    margin-bottom: 60px
+
+.container
+  padding: $separe_middle
 
 
 // anchor tags 
@@ -46,7 +64,7 @@ a:active
 
 
 a:hover 
-  text-decoration: underline
+  text-decoration: none
 
 
 
@@ -73,26 +91,6 @@ a:hover
 .logo-container 
   text-align: center
 
-
-.logo 
-  width: 96px
-  height: 96px
-  display: inline-block
-  background-size: cover
-  border-radius: 50%
-  -moz-border-radius: 50%
-  border: 2px solid $background-color
-  box-shadow: 0 0 0 3px $text-color
-
-
-// author 
-.author-container h1 
-  font-size: 2.4em
-  margin-top: 0
-  margin-bottom: 0
-  text-align: center
-
-
 // tagline 
 .tagline-container p 
   font-size: 1.3em
@@ -100,7 +98,7 @@ a:hover
   text-transform: uppercase
   margin-bottom: 2em
 
-hr 
+hr
   border: 0
   height: 1px
   background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0))
@@ -115,85 +113,61 @@ footer
   right: 0
   height: 20px
 
-
 .poweredby 
   font-family: "Arial Narrow", Arial
   font-size: 0.6em
   line-height: 0.6em
   padding: 0 5px
 
-.post__date
-  font-size: .8rem
-  color: #b6b6b6
-  p
+// POST
+.jumbo-title
+  h1
     margin-top: 0px
+    color: #343434
+  .post_date
+    font-size: .8rem
+    color: #a6a6a6
+    p
+      margin-top: 0px
 
-.post-list
+ul.post-categories
+  display: flex
+  margin-bottom: 0px
+  list-style: none
+  font-size: .8rem
+  color: #a6a6a6
+  li
+    display: inline-flex
+
+ul.post-list
+  display: block
   padding: 0
   margin-bottom: 40px
   li
     list-style: none
-    border-bottom: 1px solid #e5e5e5
+    width: 100%
   span.post-meta
     font-size: .8rem
-// media queries
-// X-Small devices (phones, 480px and up) 
-@media (max-width: 768px) 
-  // wrapper stays 480px wide past 480px wide and is kept centered 
-  header, main
-    padding: 0
-  .wrapper 
-    width: 100%
-    margin: 8% auto 0 
-    > div
-      padding: 0 20px
-  header
-    h1
-      margin: 0
-      padding-left: 10px
-    margin: 0 !important
-    .logo-container
-      display: flex
-    .brand
-      padding-top: 11px
-      font-size: 1rem
-      span
-        border: .3rem solid
-    .tagline-container
+  a
+    display: block
+    padding: 40px $separe_middle
+    background-color: #fff
+    -moz-transition: color .3s ease-in
+    -o-transition: color  .3s ease-in
+    -webkit-transition: color  .3s ease-in
+    transition: color  .3s ease-in
+    &:hover
+      background-color : $red-color
+      color: whitesmoke
+      -moz-transition: background-color  .3s ease-in
+      -o-transition: background-color   .3s ease-in
+      -webkit-transition: background-color   .3s ease-in
+      transition: background-color   .3s ease-in
+    .post-meta
+      display: block
       width: 100%
-  .breadcrumb
-    display: none
+      margin-top: 5px
+      color: $text-color
 
 
-// All other devices (768px and up) 
-@media (min-width: 768px) 
-  // past 768px the layout is changed and the wrapper has a fixed width of 680px
-  // to accomodate both the header column and the content column */
-  .wrapper
-    display: flex
-    width: 100%
-    > div
-      width: 50%
-    .col-2
-      padding-right: 40px
-
-  // the header column stays left and has a dynamic width with all contents aligned right 
-  header 
-    position: fixed
-    float: left
-    width: 40%
-    text-align: right
-  
-
-  .author-container h1,
-  .logo-container,
-  .tagline-container p 
-    text-align: right
-  
-
-  main 
-    width: 46%
-    margin-left: 54%
-    padding: 0
-  
 

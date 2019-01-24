@@ -1,0 +1,53 @@
+// X-Small devices (phones, 480px and up)
+@media (max-width: 1023px)
+  // wrapper stays 480px wide past 480px wide and is kept centered
+  $separe_middle: 20px
+
+  main
+    padding: 10px 20px
+
+  body
+    background-color: rgba(0,0,0,.02)
+
+  header
+    width: 100%
+    background: $background-color
+    .container
+      margin: 20px 20px 0px
+      padding: 0px
+    .logo-container
+      margin-bottom: 0px
+    .author
+      font-size: 1.2em
+    .sub-author
+      font-size: .8em
+    ul.menu-lateral
+      display: flex
+      width: 100%
+      margin: 5px 0 0
+      li
+        display: block
+        width: 100%
+        text-align: center
+      a
+        display: block
+        width: 100%
+        padding: 0 0 20px
+        &:hover
+          border-bottom: 5px solid $red-color
+
+  .wrapper
+    width: 100%
+    margin: 114px 0
+
+  .container
+    padding: $separe_middle
+
+  .jumbo-title
+    padding-top: 10px
+
+  .content
+    background-color: $background-color
+
+  .post-list a
+    padding: 40px $separe_middle

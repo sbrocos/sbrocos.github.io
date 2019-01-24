@@ -2,7 +2,7 @@
 layout: post
 title:  "Preludio a SpaceVim"
 date:   2018-02-01 13:07:36 +0100
-categories: editores
+categories: Editores
 ---
 
 Construyamos este "relato" desde los cimientos en vez de hacerlo desde el tejado. No es que sea un experto en la historia de los editores, pero aportaré los mínimos datos necesarios para hacerse una idea de como ha ido la cosa.
